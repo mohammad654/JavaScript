@@ -1,0 +1,299 @@
+
+
+
+
+                                    JavaScript
+
+
+               -innerText:The innerText property sets or returns the text content
+               Tip: To set or return the HTML content of an element, use the innerHTML property.
+
+              -To get content inside div in javascript we use  : textContent
+
+              Letter
+                           toUpperCase
+                           toLowerCase
+                           contact
+                           charAt
+                           length
+                           indexOf
+                           lastIndexOf
+                           search
+                           startsWith
+                           endsWith
+                           /replace/gi
+                         substring
+                        concat(" Ali")
+                        trim()
+                        charAt()
+                        search("M")
+                        startsWith("M")
+                        .endsWith("M")
+                        replace(//g,"")
+                        substring(3,5)
+
+         switch
+                var my_data=prompt('');
+                switch (my_data) {
+                    case 'Mohammad':
+                        first_div.innerText= my_data +" Yor are Administrator";
+                    break;
+                    case 'Ali':
+                        first_div.innerText=my_data+"Yor are admin";
+                        break;
+                    default:
+                        first_div.innerText=my_data+"Yor are nothing";
+                }
+       ___________________________________________________________________________________________
+        While
+                 data=0;
+                   while (data<=10){
+                       div_1.innerHTML +=js+data;
+                       ++data;
+                   }
+       while (i<=10){
+           if (i==8){
+               break
+           }
+           first_div.innerHTML+=i+"<br>";
+           i++;
+       }
+       ___________________________________________________________________________________________
+       for (i=0;i<=10;i++){
+           if (i==8){
+               continue;
+                break;
+           }
+           first_div.innerHTML+=i+"<br>";
+       }
+    var languages = ["HTML", "CSS", "JS","PHP","MySQL"];
+    for (var i=0; i<=languages.length-1; i++){
+            first_div.innerHTML+=languages[i]+"<br>";
+        }
+     var languages = ["HTML", "CSS", "JS","PHP","MySQL"];
+     for (var i in languages){
+                first_div.innerHTML+="<li>"+languages[i]+"</li>";
+            }
+        ___________________________________________________________________________________________
+   forEach
+       var languages = ["HTML", "CSS", "JS","PHP","MySQL"];
+        languages.forEach(items=>{
+            first_div.innerHTML+=items+"<br>";
+        })
+        ___________________________________________________________________________________________
+ querySelector
+     var query=document.querySelector('#first_div');
+     var query=document.querySelectorAll('div');
+     var set_item=document.querySelectorAll("button")[0];
+     var tag_h1=document.getElementsByTagName('h1')[0];
+     var class_name=document.getElementsByClassName('span_1')[0];
+
+             var class_name=document.getElementsByClassName('btn');
+             for (var i=0; i<=class_name.length-1; ++i){
+                 class_name[i].innerText="Mohammad";
+             }
+
+        ___________________________________________________________________________________________
+    addEventListener
+           window.addEventListener('mousemove', () => {
+                div_1.innerHTML='<h1>' + Math.random()+'</h1>';
+            });
+
+        ___________________________________________________________________________________________
+localStorage
+     localStorage.setItem('js',js);
+     localStorage.getItem("js")
+     localStorage.removeItem('js');
+
+    if (localStorage.getItem("name")==null){
+       var name=prompt("What is Your Name ? ");
+        set_item.addEventListener('click',()=>{
+            js=" <h1>Set JavaScript </h1>";
+            localStorage.setItem('js',js);
+            localStorage.setItem('name',name);
+        });
+    }else {
+        get_item.addEventListener('click',()=>{
+            localStorage.removeItem('js');
+            localStorage.removeItem('name');
+            var name=prompt("What is Your Name ? ")
+            js="<h1> Get JavaScript</h1>";
+            localStorage.setItem('js',js);
+            localStorage.setItem('name',name);
+        });
+    }
+    div_1.innerHTML=localStorage.getItem("js")+localStorage.getItem("name");
+        ___________________________________________________________________________________________
+sessionStorage
+    sessionStorage.setItem("Mo",'Mohammad')
+    sessionStorage.getItem("Mo");
+    sessionStorage.removeItem("Mo")
+        ___________________________________________________________________________________________
+protocol
+    location.protocol : to know type
+     location.href :URL
+     location.pathname : Path
+     location.hostname : to know domain name
+Location
+       location.reload(); refresh the page
+      location.assign() : go to new page  and go back
+      location.replace(): go to new page
+document
+      document.URL
+      document.domain
+      document.title;
+      document.body
+      document.head
+      document.images.length
+      document.links.length
+      document.forms.length
+      document.images[0].src='../img/download%20(1).png';
+        ___________________________________________________________________________________________
+addEventListener
+        mouseenter
+        mouseleave
+        mousemove
+        mouseover
+        keyup
+        keypress
+        oncopy copy
+        onpast past
+        oncut cut
+        input
+        onchange
+        change
+        focus()
+        reset
+        change
+        blur
+        load
+    window.onload
+     window.onclick
+     window.ondblclick
+     window.onkeydown
+     window.onkeyup
+     window.onkeypress
+	 window.onmouseover
+	 window.onmouseout
+	 window.onchange
+
+    screen.orientation.type
+    navigator.userAgent
+    navigator.userAgent.toLowerCase().includes("chrome")
+        ___________________________________________________________________________________________
+Before and After
+    onafterprint
+    onbeforeprint
+    beforeunload
+        ___________________________________________________________________________________________
+        ___________________________________________________________________________________________
+to know which letter click  <body onkeyup="run(event)">  function run(event){ alert("Code : " +event.code); alert("Key : " +event.key);
+                                                                 if (event.key=='1'){location.reload();}
+                                                             }
+        ___________________________________________________________________________________________
+ Input
+        send.addEventListener('click',()=>{
+            if (in_put.validity.valueMissing==''){
+                send.style.backgroundColor='#ff2053';
+                in_put.setCustomValidity("The file does'nt be empty");
+            }else if (in_put.validity.typeMismatch){
+                send.style.backgroundColor='#c3ff6c';
+                in_put.setCustomValidity("Type an correct Email");
+            }else {
+                in_put.setCustomValidity("");
+                return true;
+            }
+            my_text.innerHTML=in_put.validationMessage;
+        });
+        Run.addEventListener('invalid',()=> {
+
+      });
+    ___________________________________________________________________________________________
+        encode decode  =  btoa  atob
+        ___________________________________________________________________________________________
+  window
+    window.open("https://www.w3schools.com/css/css3_object-fit.asp");
+    window.top.close("https://mail.google.com/mail/u/0/#inbox");
+    window.stop("https://mail.google.com/mail/u/0/#inbox");
+    window.print();
+    window.prompt("");
+    window.confirm("true and false ");
+    window.location.assign('https://developer.mozilla.org/en-US/docs/Web/API/Location/reload');
+
+        ___________________________________________________________________________________________
+       to remove an element : Run.remove():
+                              Run.click();
+
+      hasAttribute
+      getAttribute();
+      removeAttribute();
+      setAttribute("class",'Mo')
+ Time
+        setInterval()
+        setTimeout()
+       clearTimeout()
+       clearInterval()
+
+Javascript History Dom
+  history().back()
+  history().forward()
+  history().go()
+  history.length()
+        ___________________________________________________________________________________________
+              var nums = [2, 10, 9, 6, 12, 3];
+                var totalSum = 0;
+                for(var i in nums) {
+                    totalSum += nums[i];
+                    console.log('Average is: ' + totalSum);
+                }
+                let result = [10, 5, 20, 100].every(function(number){
+                            return number < 150
+                        })
+                        console.log(result) // true
+
+
+    Audio
+    audio.play();
+    audio.pause();
+    audio.load();
+    audio.volume=1;
+    audio.src;
+    audio.src='';
+    audio.playbackRate +=0.90;
+
+
+
+Math
+    math.cei();
+    math.floor()
+    Math.random()
+    Math.max()
+    Math.min()
+    toExponential();
+    toFixed()
+    parseInt('80 years')/1000
+___________________________________________________________________________________________
+
+    Class
+    div_1.classList.toggle("JS");
+    div_1.classList.remove("JS");
+    div_1.classList.add("JS");
+    div_1.classList.item(1)
+    div_1.classList.length
+        ___________________________________________________________________________________________
+    screen.width
+    screen.height
+        ___________________________________________________________________________________________
+        ___________________________________________________________________________________________
+        ___________________________________________________________________________________________
+        ___________________________________________________________________________________________
+        ___________________________________________________________________________________________
+        ___________________________________________________________________________________________
+        ___________________________________________________________________________________________
+        ___________________________________________________________________________________________
+        ___________________________________________________________________________________________
+        ___________________________________________________________________________________________
+        ___________________________________________________________________________________________
+        ___________________________________________________________________________________________
+        ___________________________________________________________________________________________
+

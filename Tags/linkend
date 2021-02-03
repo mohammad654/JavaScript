@@ -1,0 +1,133 @@
+
+
+                                                JvaScript
+
+
+            Loads
+                 Right away Loading        :
+                 Asynchronous Loading      :  async
+                 Deferred Loading           : defer
+
+
+querySelector
+
+   document.querySelector("#my_button")
+   document.querySelector('#my_div').innerHTML='Mohammad';
+   document.querySelector(".btn").classList[];
+   document.querySelector(".btn").classList.add or remove or toggle ("");
+   document.querySelector("div").style.color='red';
+   document.querySelector("div").style.cssText="padding:8px; color:red";
+
+
+   toLowerCase()
+
+    regex : Search
+       var regex = /this/;
+       regex = /this/i;
+       regex = /^this/i;
+       regex = /this$/i;
+       regex = /ever\.$/i;
+       regex = /Moun.$/i;
+    i: case  insensitive
+    ^: If at  the beginning of string
+    $: If at  the end  of string
+
+    includes("");
+    repeat();
+    no repeat : new Set();
+
+     = assignment operator
+     ==comparison operator Compare Value
+     ===Identical operator  compare Data Type + Value
+
+
+
+    Logic operator
+    ||   : OR
+    !    : Not
+    &&   : and
+    ====
+
+  try {
+
+    }catch (error){
+
+    }
+
+
+
+    DOM
+
+    Class
+    div_1.classList.toggle("JS");
+    div_1.classList.remove("JS");
+    div_1.classList.add("JS");
+
+
+        Child
+    div_1.childElementCount
+    div_1.children[0].textContent
+    div_1.children[0].className
+    div_1.firstElementChild.textContent
+    div_1.firstChild.textContent
+
+    Crate
+
+    var div_3=document.createElement("h1");
+    var div=document.createTextNode("JavaScript");
+    div_3.appendChild(div);
+    document.body.appendChild(div_3);
+
+    div_1.insertBefore(div_3,div_1.firstChild);
+    div_1.insertBefore(div_3,div_1.childNodes[0]);
+
+
+    document.body.appendChild(div_1.cloneNode(true));
+
+    div_1.parentNode.style.color="red";
+    div_1.parentElement.style.color="red";
+
+    div_1.parentNode.tagName==="DIV"
+
+
+    div_1.parentNode.tagName.nextElementSibling
+    div_1.parentNode.tagName.nextSibling
+    div_1.parentNode.tagName.nextElementSibling.textContent
+
+    Width  Height
+    clientHeight   clientWidth   scrollWidth    scrollHeight   offsetWidth     offsetHeight
+    Border clientLeft  clientTop
+
+
+
+
+    lastModified
+    inputEncoding
+    document.URL
+    document.createComment("Comment");
+
+     var attribute=document.createAttribute('class');
+        attribute.value="mohammad";
+        div_1.setAttributeNode(attribute);
+
+
+----------------------------------------------Document Object Model---------------------------------------------------
+
+    ctrl+l
+    ctrl+shift+j
+
+
+    groups
+    console.group("JavaScript");
+    console.dir(document.querySelectorAll("div"));
+    console.groupEnd();
+
+    dir(document.getElementById("my_div"));
+
+    console.time("JavaScript");
+    function my_fun(){};
+    console.timeEnd("JavaScript")
+
+
+
+
